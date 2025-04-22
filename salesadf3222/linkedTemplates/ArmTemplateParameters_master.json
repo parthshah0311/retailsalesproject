@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "salesadf3222"
+		},
+		"ls_databricks_accessToken": {
+			"value": ""
+		},
+		"ls_onprem_password": {
+			"value": ""
+		},
+		"ls_databricks_properties_typeProperties_existingClusterId": {
+			"value": "0422-162902-uv324qq0"
+		},
+		"ls_onprem_properties_typeProperties_server": {
+			"value": "SHAH\\MSSQLSERVER2"
+		},
+		"ls_onprem_properties_typeProperties_database": {
+			"value": "retailsales"
+		},
+		"ls_onprem_properties_typeProperties_userName": {
+			"value": "sa"
+		},
+		"ls_restservice_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		},
+		"ls_storage_properties_typeProperties_url": {
+			"value": "https://retailsalesstorage.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
