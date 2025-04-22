@@ -1,0 +1,9 @@
+{
+	"name": "salesadf3222",
+	"location": "canadacentral",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a35cbd18-cc99-4a4c-9154-8f67473238cc",
+		"tenantId": "898cbc78-3e7e-4551-a5b2-ddd1b42b07bf"
+	}
+}

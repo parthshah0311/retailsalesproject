@@ -1,0 +1,38 @@
+{
+	"name": "ds_salesstoreonprem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "StoreID",
+				"type": "varchar"
+			},
+			{
+				"name": "TotalSales",
+				"type": "decimal",
+				"precision": 10,
+				"scale": 2
+			},
+			{
+				"name": "TotalQuantity",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "TransactionCount",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_by_store"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

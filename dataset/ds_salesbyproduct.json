@@ -1,0 +1,17 @@
+{
+	"name": "ds_salesbyproduct",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_by_product"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

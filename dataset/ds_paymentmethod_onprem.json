@@ -1,0 +1,17 @@
+{
+	"name": "ds_paymentmethod_onprem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_onprem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "sales_by_payment_method"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,11 @@
+{
+	"name": "ls_storage",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://retailsalesstorage.dfs.core.windows.net/"
+		}
+	}
+}

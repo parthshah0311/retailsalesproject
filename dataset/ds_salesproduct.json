@@ -1,0 +1,38 @@
+{
+	"name": "ds_salesproduct",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sales_by_product",
+				"fileSystem": "gold"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "ProductID",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "TotalSales",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "TotalQuantity",
+				"type": "INT_64"
+			},
+			{
+				"name": "AverageUnitPrice",
+				"type": "DOUBLE"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

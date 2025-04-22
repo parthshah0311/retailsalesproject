@@ -1,0 +1,34 @@
+{
+	"name": "ds_sales_by_payment_method",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "sales_by_payment_method",
+				"fileSystem": "gold"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "PaymentMethod",
+				"type": "UTF8"
+			},
+			{
+				"name": "TotalSales",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "OrderCount",
+				"type": "INT_64"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
